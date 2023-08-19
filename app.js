@@ -1,5 +1,6 @@
 import express from "express"
 import cors from "cors"
+const port = process.env.PORT || 3000
 
 
 const app = express()
@@ -16,6 +17,6 @@ app.get("/api", (req, res) => {
 
 export { app }
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Server is running on port 3000")
 })
